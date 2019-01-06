@@ -10,6 +10,8 @@ import UIKit
 
 class BoardVC: UIViewController {
 
+    @IBAction func tab(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

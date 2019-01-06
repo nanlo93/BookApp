@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpVC: UIViewController, UITextFieldDelegate {
-    //id, pw 길이 제한
+    //입력길이제한에 필요한 상수 초기화
     let limitLengthIDxPW = 20
     let limitLengthPhone = 11
     let limitLengthBirthday = 8
@@ -23,11 +23,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBAction func btnSignUp(_ sender: Any) {
         if tfPw.text == tfPwCheck.text {
             self.presentingViewController?.dismiss(animated: true, completion: nil)
+        } else if tfPw.text != tfPwCheck.text {
+            let alert = UIAlertController(title: "비밀번호를 확인하세요", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .cancel))
+            self.present(alert, animated: true)
         }
     }
     
     @IBAction func btnBack(_ sender: Any) {
-//        이전 화면으로 되돌아가기
+        //        이전 화면으로 되돌아가기
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -46,22 +50,35 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         guard let text = textField.text else { return true }
         let newLength = text.characters.count + string.characters.count - range.length
         switch textField.placeholder! {
-        case "아이디":
-            fallthrough
-        case "비밀번호":
-            fallthrough
+        case "아이디 20자이내":
+            return newLength <= limitLengthIDxPW
+        case "비밀번호 20자이내":
+            return newLength <= limitLengthIDxPW
         case "비밀번호 확인":
-            return newLength <= 20
-        case "전화번호":
-            return newLength <= 11
-        case "생일":
-            return newLength <= 8
+            return newLength <= limitLengthIDxPW
+        case "전화번호 11자이내":
+            return newLength <= limitLengthPhone
+        case "생년월일 8자":
+            return newLength <= limitLengthBirthday
         default:
             return false
         }
-//        return newLength <= limitLengthIDxPW
     }
     
+    //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
     
     /*
      // MARK: - Navigation
