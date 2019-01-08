@@ -22,6 +22,12 @@
 		5463711321DF4389007B8EA7 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711021DF4389007B8EA7 /* book.png */; };
 		5463711421DF4389007B8EA7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711121DF4389007B8EA7 /* home.png */; };
 		5463711521DF4389007B8EA7 /* megaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711221DF4389007B8EA7 /* megaphone.png */; };
+		54C3E7A021E32CE300BF6328 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */; };
+		54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A421E32E5600BF6328 /* FMDatabaseQueue.m */; };
+		54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A721E32E5600BF6328 /* FMDatabasePool.m */; };
+		54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A821E32E5600BF6328 /* FMResultSet.m */; };
+		54C3E7B121E32E5700BF6328 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7AA21E32E5600BF6328 /* FMDatabase.m */; };
+		54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +49,20 @@
 		5463711021DF4389007B8EA7 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		5463711121DF4389007B8EA7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		5463711221DF4389007B8EA7 /* megaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megaphone.png; sourceTree = "<group>"; };
+		54C3E79D21E32CD100BF6328 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		54C3E7A221E32E5500BF6328 /* BookApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		54C3E7A321E32E5500BF6328 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		54C3E7A421E32E5600BF6328 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		54C3E7A521E32E5600BF6328 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		54C3E7A621E32E5600BF6328 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		54C3E7A721E32E5600BF6328 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		54C3E7A821E32E5600BF6328 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		54C3E7A921E32E5600BF6328 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		54C3E7AA21E32E5600BF6328 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		54C3E7AC21E32E5600BF6328 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		54C3E7AD21E32E5600BF6328 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		628AD3BE0572BBF5466985D7 /* Pods_BookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C3E7A021E32CE300BF6328 /* libsqlite3.tbd in Frameworks */,
 				06D427B582210E5913AF0FA3 /* Pods_BookApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +100,7 @@
 		544D12E321DDB537008381C7 /* BookApp */ = {
 			isa = PBXGroup;
 			children = (
+				54C3E7A121E32E4200BF6328 /* fmdb */,
 				546370F921DEF4D1007B8EA7 /* resource */,
 				544D12E421DDB537008381C7 /* AppDelegate.swift */,
 				544D12E821DDB537008381C7 /* Main.storyboard */,
@@ -106,9 +128,30 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		54C3E7A121E32E4200BF6328 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				54C3E7A621E32E5600BF6328 /* FMDatabase.h */,
+				54C3E7AA21E32E5600BF6328 /* FMDatabase.m */,
+				54C3E7A921E32E5600BF6328 /* FMDatabaseAdditions.h */,
+				54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */,
+				54C3E7AD21E32E5600BF6328 /* FMDatabasePool.h */,
+				54C3E7A721E32E5600BF6328 /* FMDatabasePool.m */,
+				54C3E7A321E32E5500BF6328 /* FMDatabaseQueue.h */,
+				54C3E7A421E32E5600BF6328 /* FMDatabaseQueue.m */,
+				54C3E7A521E32E5600BF6328 /* FMDB.h */,
+				54C3E7AC21E32E5600BF6328 /* FMResultSet.h */,
+				54C3E7A821E32E5600BF6328 /* FMResultSet.m */,
+				54C3E7A221E32E5500BF6328 /* BookApp-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		C35AF5A7076B697C84EA6F83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */,
+				54C3E79D21E32CD100BF6328 /* libsqlite3.0.tbd */,
 				628AD3BE0572BBF5466985D7 /* Pods_BookApp.framework */,
 			);
 			name = Frameworks;
@@ -157,6 +200,7 @@
 				TargetAttributes = {
 					544D12E021DDB537008381C7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -248,12 +292,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				544D12E521DDB537008381C7 /* AppDelegate.swift in Sources */,
+				54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */,
 				5463710D21DF3565007B8EA7 /* HistoryVC.swift in Sources */,
 				5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */,
+				54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */,
+				54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */,
 				5463710F21DF3574007B8EA7 /* BoardVC.swift in Sources */,
 				544D12FA21DDB841008381C7 /* LoginVC.swift in Sources */,
 				5463710521DF264D007B8EA7 /* SignUpVC.swift in Sources */,
+				54C3E7B121E32E5700BF6328 /* FMDatabase.m in Sources */,
 				544D12ED21DDB537008381C7 /* BookApp.xcdatamodeld in Sources */,
+				54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +449,7 @@
 			baseConfigurationReference = 201B8B0D2ED20F3238026856 /* Pods-BookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +458,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hybrid.BookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookApp/fmdb/BookApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,6 +470,7 @@
 			baseConfigurationReference = 4360DAAC7CB1DED8BA6DED1D /* Pods-BookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,6 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hybrid.BookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookApp/fmdb/BookApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

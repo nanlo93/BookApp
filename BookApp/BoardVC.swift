@@ -29,4 +29,8 @@ class BoardVC: UIViewController {
     }
     */
 
+    //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

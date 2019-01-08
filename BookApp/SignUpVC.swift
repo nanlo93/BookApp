@@ -70,6 +70,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    //return 버튼으로 다음 textfield 이동
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let nextTag = textField.tag + 1
         if let nextResponder = textField.superview?.viewWithTag(nextTag) {
