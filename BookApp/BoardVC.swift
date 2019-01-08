@@ -9,9 +9,14 @@
 import UIKit
 
 class BoardVC: UIViewController {
-
-    @IBAction func tab(_ sender: Any) {
+    
+    @IBOutlet weak var segmentTab: UISegmentedControl!
+    
+    @IBAction func segmentTabbed(_ sender: Any) {
+        let segmentIndex = segmentTab.selectedSegmentIndex
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

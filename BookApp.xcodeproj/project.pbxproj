@@ -28,6 +28,8 @@
 		54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A821E32E5600BF6328 /* FMResultSet.m */; };
 		54C3E7B121E32E5700BF6328 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7AA21E32E5600BF6328 /* FMDatabase.m */; };
 		54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */; };
+		54C3E7B421E494DA00BF6328 /* AddBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */; };
+		54C3E7B621E495F000BF6328 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7B521E495F000BF6328 /* BoardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		54C3E7AC21E32E5600BF6328 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		54C3E7AD21E32E5600BF6328 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoardVC.swift; sourceTree = "<group>"; };
+		54C3E7B521E495F000BF6328 /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
 		628AD3BE0572BBF5466985D7 /* Pods_BookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,8 @@
 				5463710421DF264D007B8EA7 /* SignUpVC.swift */,
 				5463710C21DF3565007B8EA7 /* HistoryVC.swift */,
 				5463710E21DF3574007B8EA7 /* BoardVC.swift */,
+				54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */,
+				54C3E7B521E495F000BF6328 /* BoardCell.swift */,
 			);
 			path = BookApp;
 			sourceTree = "<group>";
@@ -296,12 +302,14 @@
 				5463710D21DF3565007B8EA7 /* HistoryVC.swift in Sources */,
 				5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */,
 				54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */,
+				54C3E7B421E494DA00BF6328 /* AddBoardVC.swift in Sources */,
 				54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */,
 				5463710F21DF3574007B8EA7 /* BoardVC.swift in Sources */,
 				544D12FA21DDB841008381C7 /* LoginVC.swift in Sources */,
 				5463710521DF264D007B8EA7 /* SignUpVC.swift in Sources */,
 				54C3E7B121E32E5700BF6328 /* FMDatabase.m in Sources */,
 				544D12ED21DDB537008381C7 /* BookApp.xcdatamodeld in Sources */,
+				54C3E7B621E495F000BF6328 /* BoardCell.swift in Sources */,
 				54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,14 +1,14 @@
 //
-//  mainVC.swift
+//  AddBoardVC.swift
 //  BookApp
 //
-//  Created by Shin on 04/01/2019.
+//  Created by Shin on 08/01/2019.
 //  Copyright © 2019 hybrid. All rights reserved.
 //
 
 import UIKit
 
-class MainVC: UIViewController {
+class AddBoardVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,4 @@ class MainVC: UIViewController {
     }
     */
 
-    //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
 }
