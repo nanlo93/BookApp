@@ -46,7 +46,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         tfId.delegate = self
         tfPw.delegate = self
         
-        print("test")
     }
     
     //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
