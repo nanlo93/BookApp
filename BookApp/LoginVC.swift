@@ -10,6 +10,8 @@ import UIKit
 import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
 class LoginVC: UIViewController, UITextFieldDelegate {
+    var keyboardShown:Bool = false // 키보드 상태 확인
+    var originY:CGFloat? // 오브젝트의 기본 위치
     
     @IBOutlet weak var tfId: UITextField!
     @IBOutlet weak var tfPw: UITextField!
@@ -46,6 +48,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         tfId.delegate = self
         tfPw.delegate = self
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+    }
+    
+    @objc func keyboardWillShow(_ sender:Notification){
+        self.view.frame.origin.y = -150
+    }
+    
+    @objc func keyboardWillHide(_ sender:Notification){
+        self.view.frame.origin.y = 0
     }
     
     //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
