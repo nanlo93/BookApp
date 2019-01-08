@@ -10,6 +10,10 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBAction func btnLogout(_ sender: Any) {
+        //        이전 화면으로 되돌아가기
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
