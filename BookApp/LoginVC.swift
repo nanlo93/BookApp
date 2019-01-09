@@ -20,7 +20,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //id와 pw 레이블에 입력된 값 가져오기
         let id = tfId.text
         let pw = tfPw.text
-        print("아이디 : \(id!) \(id!.count), 비밀번호 : \(pw!) \(pw!.count)")
+        print("아이디 : \(id!), 비밀번호 : \(pw!)")
         // 화면을 전환할 뷰 컨트롤러 객체를 스토리보드에서 Storyboard ID 정보를 이용하여 읽어온다
         
         //로그인 성공시
