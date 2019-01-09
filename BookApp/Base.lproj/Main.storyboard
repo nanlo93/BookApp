@@ -292,7 +292,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t8O-u5-LcE">
-                                <rect key="frame" x="16" y="105" width="343" height="562"/>
+                                <rect key="frame" x="16" y="105" width="343" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="UIC-tf-xSx">
                                     <rect key="frame" x="0.0" y="108" width="343" height="44"/>
@@ -388,7 +388,7 @@
                                     <navigationItem title="글작성" id="enz-HY-2ox">
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="NVy-n8-2pO">
                                             <connections>
-                                                <segue destination="FMc-sW-e1A" kind="show" id="EHY-5E-vvz"/>
+                                                <action selector="btnSaveClick:" destination="nB8-30-R78" id="Yv8-PA-KYw"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -450,6 +450,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L1a-ts-cTE"/>
                     </view>
+                    <connections>
+                        <outlet property="tfTitle" destination="nlw-UU-kNm" id="Q35-kf-hyB"/>
+                        <outlet property="tvContent" destination="huL-hM-iNS" id="HsF-Pv-8Gn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lK-jU-XDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,7 +466,4 @@
         <image name="main.png" width="1078" height="605"/>
         <image name="megaphone.png" width="26" height="26"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="EHY-5E-vvz"/>
-    </inferredMetricsTieBreakers>
 </document>

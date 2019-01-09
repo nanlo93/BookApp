@@ -10,9 +10,25 @@ import UIKit
 
 class AddBoardVC: UIViewController {
 
+    @IBOutlet weak var tfTitle: UITextField!
+    
+    @IBOutlet weak var tvContent: UITextView!
+    
+    @IBAction func btnSaveClick(_ sender: Any) {
+        //        이전 화면으로 되돌아가기
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tfTitle.layer.cornerRadius = 5
+        tfTitle.layer.borderWidth = 0.5
+        tfTitle.layer.borderColor = UIColor.black.cgColor
+        
+        tvContent.layer.cornerRadius = 5
+        tvContent.layer.borderWidth = 0.5
+        tvContent.layer.borderColor = UIColor.black.cgColor
+        
         // Do any additional setup after loading the view.
     }
     
