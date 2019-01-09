@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
-class AddBoardVC: UIViewController {
-
+class AddBoardVC: UIViewController, UITextViewDelegate {
+    
     @IBOutlet weak var tfTitle: UITextField!
     
     @IBOutlet weak var tvContent: UITextView!
@@ -20,7 +21,9 @@ class AddBoardVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tvContent.delegate = self
+        
         tfTitle.layer.cornerRadius = 5
         tfTitle.layer.borderWidth = 0.5
         tfTitle.layer.borderColor = UIColor.black.cgColor
@@ -32,15 +35,29 @@ class AddBoardVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        //tvContent.resignFirstResponder()
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        self.view.frame.origin.y = -100
+    }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        self.view.frame.origin.y = 0
+        return true
+    }
+    
 }

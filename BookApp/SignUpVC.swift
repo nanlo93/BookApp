@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
 class SignUpVC: UIViewController, UITextFieldDelegate {
     //입력길이제한에 필요한 상수 초기화
@@ -24,7 +25,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         if tfPw.text == tfPwCheck.text {
             self.presentingViewController?.dismiss(animated: true, completion: nil)
         } else if tfPw.text != tfPwCheck.text {
-            let alert = UIAlertController(title: "비밀번호를 확인하세요", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "비밀번호가 일치하지 않습니다.", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "확인", style: .cancel))
             self.present(alert, animated: true)
         }
@@ -49,7 +50,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     }
     
     @objc func keyboardWillShow(_ sender:Notification){
-        self.view.frame.origin.y = -150
+        self.view.frame.origin.y = -140
     }
     
     @objc func keyboardWillHide(_ sender:Notification){

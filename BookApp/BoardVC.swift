@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
 class BoardVC: UIViewController {
     
@@ -33,9 +34,4 @@ class BoardVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    //키보드가 올라온 상태에서 화면을 터치해서 키보드 가리기
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
 }

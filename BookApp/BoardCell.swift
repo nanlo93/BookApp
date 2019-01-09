@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
 class BoardCell: UITableViewCell {
 

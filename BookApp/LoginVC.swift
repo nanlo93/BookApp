@@ -11,7 +11,6 @@ import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 �
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     var keyboardShown:Bool = false // 키보드 상태 확인
-    var originY:CGFloat? // 오브젝트의 기본 위치
     
     @IBOutlet weak var tfId: UITextField!
     @IBOutlet weak var tfPw: UITextField!
@@ -47,20 +46,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         tfId.delegate = self
         tfPw.delegate = self
-        
-        //키보드 사용시 화면을 가리는걸 방지하는 Notification 설정
-        //UIResponder.keyboardWillShowNotification라는 이름의 이벤트가 발생하면 self가 처리를 할 것인데 처리할 내용은 keyboardWillShow(_:)라는 함수에 담겨져 있습니다.
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification , object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification , object: nil)
     }
     
-    //키보드가 보여질때 화면을 위로 올려주는 메소드
-    @objc func keyboardWillShow(_ sender:Notification){
-        self.view.frame.origin.y = -100
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.view.frame.origin.y = -90
     }
     
-    //키보드가 내려갈때 화면을 다시 내려주는 메소드
-    @objc func keyboardWillHide(_ sender:Notification){
+    func textFieldDidEndEditing(_ textField: UITextField) {
         self.view.frame.origin.y = 0
     }
     

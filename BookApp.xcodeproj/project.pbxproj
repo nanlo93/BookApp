@@ -22,6 +22,7 @@
 		5463711321DF4389007B8EA7 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711021DF4389007B8EA7 /* book.png */; };
 		5463711421DF4389007B8EA7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711121DF4389007B8EA7 /* home.png */; };
 		5463711521DF4389007B8EA7 /* megaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711221DF4389007B8EA7 /* megaphone.png */; };
+		54B97E6221E609900052044C /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B97E6121E609900052044C /* BoardData.swift */; };
 		54C3E7A021E32CE300BF6328 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */; };
 		54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A421E32E5600BF6328 /* FMDatabaseQueue.m */; };
 		54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A721E32E5600BF6328 /* FMDatabasePool.m */; };
@@ -51,6 +52,7 @@
 		5463711021DF4389007B8EA7 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		5463711121DF4389007B8EA7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		5463711221DF4389007B8EA7 /* megaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megaphone.png; sourceTree = "<group>"; };
+		54B97E6121E609900052044C /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
 		54C3E79D21E32CD100BF6328 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		54C3E7A221E32E5500BF6328 /* BookApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				5463710E21DF3574007B8EA7 /* BoardVC.swift */,
 				54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */,
 				54C3E7B521E495F000BF6328 /* BoardCell.swift */,
+				54B97E6121E609900052044C /* BoardData.swift */,
 			);
 			path = BookApp;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				5463710D21DF3565007B8EA7 /* HistoryVC.swift in Sources */,
 				5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */,
 				54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */,
+				54B97E6221E609900052044C /* BoardData.swift in Sources */,
 				54C3E7B421E494DA00BF6328 /* AddBoardVC.swift in Sources */,
 				54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */,
 				5463710F21DF3574007B8EA7 /* BoardVC.swift in Sources */,
