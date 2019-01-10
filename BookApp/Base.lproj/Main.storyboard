@@ -234,12 +234,24 @@
                                 <rect key="frame" x="272" y="409" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="참석"/>
+                                <connections>
+                                    <action selector="btnEntryClicked:" destination="fzx-B6-1OW" eventType="touchUpInside" id="WOy-pW-zVG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="J9B-tV-Bdr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="메인" image="home.png" id="oAv-Fu-98g"/>
+                    <connections>
+                        <outlet property="btnEntry" destination="XLA-qM-RVQ" id="1vD-4h-jS8"/>
+                        <outlet property="imgBook" destination="lmr-35-dlS" id="1jf-cz-WZU"/>
+                        <outlet property="lblBookAuthor" destination="Hem-bh-Lfd" id="6Nd-dG-MKh"/>
+                        <outlet property="lblBookTitle" destination="1AN-3K-nEH" id="qXw-Gk-3pe"/>
+                        <outlet property="lblEntryCount" destination="jhN-S7-rxK" id="7SL-Ei-s1P"/>
+                        <outlet property="lblFee" destination="Qzv-eO-nFT" id="kRt-cs-582"/>
+                        <outlet property="lblPlace" destination="47A-e4-xzP" id="8IA-iT-7Tf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6RI-Cl-t0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,14 +295,37 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-DR-fIf">
+                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="a5f-GR-Lxj">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aje-qs-gU9">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aje-qs-gU9" id="8wr-tl-kgu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eVx-aO-ktS" firstAttribute="trailing" secondItem="o8o-oT-XX7" secondAttribute="trailing" id="2Br-eM-fVQ"/>
+                            <constraint firstItem="HqI-DR-fIf" firstAttribute="trailing" secondItem="o8o-oT-XX7" secondAttribute="trailing" id="M3B-kO-gda"/>
                             <constraint firstItem="z94-8G-Dcc" firstAttribute="leading" secondItem="o8o-oT-XX7" secondAttribute="leading" id="M4O-4k-N9d"/>
                             <constraint firstItem="z94-8G-Dcc" firstAttribute="top" secondItem="o8o-oT-XX7" secondAttribute="top" id="QdX-r5-Akx"/>
+                            <constraint firstItem="HqI-DR-fIf" firstAttribute="bottom" secondItem="o8o-oT-XX7" secondAttribute="bottom" id="Uiu-YE-1kF"/>
                             <constraint firstItem="eVx-aO-ktS" firstAttribute="leading" secondItem="o8o-oT-XX7" secondAttribute="leading" id="ece-le-hsE"/>
                             <constraint firstItem="eVx-aO-ktS" firstAttribute="top" secondItem="z94-8G-Dcc" secondAttribute="bottom" id="mgO-Ji-ePz"/>
+                            <constraint firstItem="HqI-DR-fIf" firstAttribute="leading" secondItem="o8o-oT-XX7" secondAttribute="leading" id="ufy-ZL-bDL"/>
+                            <constraint firstItem="HqI-DR-fIf" firstAttribute="top" secondItem="eVx-aO-ktS" secondAttribute="bottom" id="xb8-W2-IhQ"/>
                             <constraint firstItem="z94-8G-Dcc" firstAttribute="trailing" secondItem="o8o-oT-XX7" secondAttribute="trailing" id="yul-q2-OLg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o8o-oT-XX7"/>
