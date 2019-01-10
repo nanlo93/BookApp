@@ -55,9 +55,7 @@ class AddBoardVC: UIViewController, UITextViewDelegate {
         self.view.frame.origin.y = -100
     }
     
-    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+    func textViewDidEndEditing(_ textView: UITextView) {
         self.view.frame.origin.y = 0
-        return true
     }
-    
 }

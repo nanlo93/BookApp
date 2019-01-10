@@ -44,16 +44,12 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         tfPwCheck.delegate = self
         tfPhone.delegate = self
         tfBirthday.delegate = self
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification , object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification , object: nil)
     }
-    
-    @objc func keyboardWillShow(_ sender:Notification){
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         self.view.frame.origin.y = -140
     }
     
-    @objc func keyboardWillHide(_ sender:Notification){
+    func textFieldDidEndEditing(_ textField: UITextField) {
         self.view.frame.origin.y = 0
     }
     
