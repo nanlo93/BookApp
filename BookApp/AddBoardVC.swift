@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
-class AddBoardVC: UIViewController, UITextViewDelegate {
+class AddBoardVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var tfTitle: UITextField!
     
@@ -22,6 +22,7 @@ class AddBoardVC: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tfTitle.delegate = self
         tvContent.delegate = self
         
         tfTitle.layer.cornerRadius = 5
@@ -57,5 +58,16 @@ class AddBoardVC: UIViewController, UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         self.view.frame.origin.y = 0
+    }
+    
+    //return 버튼으로 다음 textfield 이동
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = self.tvContent.tag
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
     }
 }
