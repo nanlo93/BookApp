@@ -22,17 +22,38 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tfBirthday: UITextField!
     
     @IBAction func btnSignUp(_ sender: Any) {
-        if tfPw.text == tfPwCheck.text {
-            self.presentingViewController?.dismiss(animated: true, completion: nil)
+        if tfId.text == "" || tfPw.text == "" || tfPwCheck.text == "" || tfPhone.text == "" || tfBirthday.text == "" {
+            let alert = UIAlertController(title: "모든 회원정보를 확인해 주세요", message: "", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "확인", style: .cancel)
+            alert.addAction(ok)
+            self.present(alert, animated: true)
         } else if tfPw.text != tfPwCheck.text {
-            let alert = UIAlertController(title: "비밀번호가 일치하지 않습니다.", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "비밀번호가 일치하지 않습니다", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "확인", style: .cancel))
             self.present(alert, animated: true)
+        } else if tfPhone.text?.count != 11 {
+            let alert = UIAlertController(title: "핸드폰번호 11자리를 입력해 주세요", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .cancel))
+            self.present(alert, animated: true)
+        }else if tfBirthday.text?.count != 8 {
+            let alert = UIAlertController(title: "생년월일 8자리를 입력해 주세요", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .cancel))
+            self.present(alert, animated: true)
+        } else {
+            let birthdayDate = stringToDate(tfBirthday.text!)
+            print(birthdayDate)
+            //let param : Parameters = ["id" : tfId.text, "pw" : tfPw.text, "phone" : tfPhone.text, "birthday" : birthdayDate]
+            //서버로 회원 정보 전송
+            //웹에 요청
+            //let request = Alamofire.request("cafe24.com", method: .post, parameters: param, encoding: URLEncoding.methodDependent)
+            
+            //이전 화면으로 되돌아가기
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
         }
     }
     
     @IBAction func btnBack(_ sender: Any) {
-        //        이전 화면으로 되돌아가기
+        //이전 화면으로 되돌아가기
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -45,6 +66,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         tfPhone.delegate = self
         tfBirthday.delegate = self
     }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.view.frame.origin.y = -140
     }
@@ -87,6 +109,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
         }
         return true
+    }
+    
+    //날짜 정보를 Date 포맷으로 변경
+    func stringToDate(_ value : String) -> Date {
+        let df = DateFormatter()
+        df.dateFormat = "yyyyMMdd"
+        df.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+        return df.date(from: value)!
     }
     
     /*

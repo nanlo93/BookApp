@@ -31,6 +31,7 @@
 		54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7AB21E32E5600BF6328 /* FMDatabaseAdditions.m */; };
 		54C3E7B421E494DA00BF6328 /* AddBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */; };
 		54C3E7B621E495F000BF6328 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7B521E495F000BF6328 /* BoardCell.swift */; };
+		54FBE6BB21E7280200864003 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FBE6BA21E7280000864003 /* question.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		54C3E7AD21E32E5600BF6328 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoardVC.swift; sourceTree = "<group>"; };
 		54C3E7B521E495F000BF6328 /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
+		54FBE6BA21E7280000864003 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
 		628AD3BE0572BBF5466985D7 /* Pods_BookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		546370F921DEF4D1007B8EA7 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				54FBE6BA21E7280000864003 /* question.png */,
 				5463711021DF4389007B8EA7 /* book.png */,
 				5463711121DF4389007B8EA7 /* home.png */,
 				5463711221DF4389007B8EA7 /* megaphone.png */,
@@ -243,6 +246,7 @@
 				544D12F221DDB539008381C7 /* LaunchScreen.storyboard in Resources */,
 				544D12EF21DDB539008381C7 /* Assets.xcassets in Resources */,
 				544D12EA21DDB537008381C7 /* Main.storyboard in Resources */,
+				54FBE6BB21E7280200864003 /* question.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,15 +20,25 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let id = tfId.text
         let pw = tfPw.text
         print("아이디 : \(id!), 비밀번호 : \(pw!)")
-        // 화면을 전환할 뷰 컨트롤러 객체를 스토리보드에서 Storyboard ID 정보를 이용하여 읽어온다
-        
-        //로그인 성공시
-        //메인 화면으로 이동
-        if let main = self.storyboard?.instantiateViewController(withIdentifier: "Tabbar") {
-            // 화면을 전환할 때 애니메이션 정의
-            main.modalTransitionStyle = UIModalTransitionStyle.coverVertical
-            // 인자값으로 받은 뷰 컨트롤러로 화면 이동
-            self.present(main, animated: true, completion: nil)
+        if id == "" || pw == ""{
+            let alert = UIAlertController(title: "아이디와 비밀번호를 입력하세요", message: "", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "확인", style: .cancel)
+            alert.addAction(ok)
+            self.present(alert, animated: true)
+        }else{
+            //let param : Parameters = ["id" : tfId.text, "pw" : tfPw.text]
+            //서버로 회원 정보 전송
+            //웹에 요청
+            //let request = Alamofire.request("cafe24.com", method: .post, parameters: param, encoding: URLEncoding.methodDependent)
+            
+            //로그인 성공시
+            // 화면을 전환할 뷰 컨트롤러 객체를 스토리보드에서 Storyboard ID 정보를 이용하여 읽어온다
+            if let main = self.storyboard?.instantiateViewController(withIdentifier: "Tabbar") {
+                // 화면을 전환할 때 애니메이션 정의
+                main.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                // 인자값으로 받은 뷰 컨트롤러로 화면 이동
+                self.present(main, animated: true, completion: nil)
+            }
         }
     }
     
