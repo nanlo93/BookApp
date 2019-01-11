@@ -9,7 +9,12 @@
 import UIKit
 import Alamofire    //URL 통신을 쉽게 할 수 있도록 해주는 외부 라이브러리
 
-class BoardVC: UIViewController {
+class BoardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    //AppDelegate에 대한 참조 변수
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var segmentTab: UISegmentedControl!
     
@@ -24,7 +29,6 @@ class BoardVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -34,4 +38,15 @@ class BoardVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //섹션의 갯수를 설정하는 메소드
+    //없으면 1을 리턴
+    //그룹화를 하지 않을 거라면 삭제 또는 1을 리턴
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }

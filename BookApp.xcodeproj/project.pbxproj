@@ -15,6 +15,8 @@
 		544D12F221DDB539008381C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544D12F021DDB539008381C7 /* LaunchScreen.storyboard */; };
 		544D12FA21DDB841008381C7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D12F921DDB841008381C7 /* LoginVC.swift */; };
 		5460273021E834D4001935F2 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460272F21E834D4001935F2 /* AddEventVC.swift */; };
+		5460273221E88F5C001935F2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460273121E88F5C001935F2 /* EventCell.swift */; };
+		5460273621E8922B001935F2 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460273521E8922B001935F2 /* EventData.swift */; };
 		546370FF21DEF500007B8EA7 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 546370FB21DEF4FE007B8EA7 /* main.png */; };
 		5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463710221DF0DCF007B8EA7 /* MainVC.swift */; };
 		5463710521DF264D007B8EA7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463710421DF264D007B8EA7 /* SignUpVC.swift */; };
@@ -47,6 +49,8 @@
 		544D12F321DDB539008381C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544D12F921DDB841008381C7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5460272F21E834D4001935F2 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		5460273121E88F5C001935F2 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		5460273521E8922B001935F2 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		546370FB21DEF4FE007B8EA7 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		5463710221DF0DCF007B8EA7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		5463710421DF264D007B8EA7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				54C3E7B521E495F000BF6328 /* BoardCell.swift */,
 				54B97E6121E609900052044C /* BoardData.swift */,
 				5460272F21E834D4001935F2 /* AddEventVC.swift */,
+				5460273121E88F5C001935F2 /* EventCell.swift */,
+				5460273521E8922B001935F2 /* EventData.swift */,
 			);
 			path = BookApp;
 			sourceTree = "<group>";
@@ -309,9 +315,11 @@
 			files = (
 				544D12E521DDB537008381C7 /* AppDelegate.swift in Sources */,
 				54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */,
+				5460273621E8922B001935F2 /* EventData.swift in Sources */,
 				5463710D21DF3565007B8EA7 /* HistoryVC.swift in Sources */,
 				5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */,
 				54C3E7B021E32E5700BF6328 /* FMResultSet.m in Sources */,
+				5460273221E88F5C001935F2 /* EventCell.swift in Sources */,
 				54B97E6221E609900052044C /* BoardData.swift in Sources */,
 				54C3E7B421E494DA00BF6328 /* AddBoardVC.swift in Sources */,
 				54C3E7AF21E32E5600BF6328 /* FMDatabasePool.m in Sources */,

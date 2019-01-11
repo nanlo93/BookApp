@@ -12,4 +12,5 @@ class BoardData{
     var title : String?
     var content : String?
     var regDate : Date?
+    var id : String?
 }
