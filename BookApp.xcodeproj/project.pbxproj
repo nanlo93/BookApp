@@ -14,6 +14,7 @@
 		544D12EF21DDB539008381C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D12EE21DDB539008381C7 /* Assets.xcassets */; };
 		544D12F221DDB539008381C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544D12F021DDB539008381C7 /* LaunchScreen.storyboard */; };
 		544D12FA21DDB841008381C7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D12F921DDB841008381C7 /* LoginVC.swift */; };
+		5460273021E834D4001935F2 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460272F21E834D4001935F2 /* AddEventVC.swift */; };
 		546370FF21DEF500007B8EA7 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 546370FB21DEF4FE007B8EA7 /* main.png */; };
 		5463710321DF0DCF007B8EA7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463710221DF0DCF007B8EA7 /* MainVC.swift */; };
 		5463710521DF264D007B8EA7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463710421DF264D007B8EA7 /* SignUpVC.swift */; };
@@ -45,6 +46,7 @@
 		544D12F121DDB539008381C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		544D12F321DDB539008381C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544D12F921DDB841008381C7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5460272F21E834D4001935F2 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		546370FB21DEF4FE007B8EA7 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		5463710221DF0DCF007B8EA7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		5463710421DF264D007B8EA7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				54C3E7B321E494DA00BF6328 /* AddBoardVC.swift */,
 				54C3E7B521E495F000BF6328 /* BoardCell.swift */,
 				54B97E6121E609900052044C /* BoardData.swift */,
+				5460272F21E834D4001935F2 /* AddEventVC.swift */,
 			);
 			path = BookApp;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				544D12ED21DDB537008381C7 /* BookApp.xcdatamodeld in Sources */,
 				54C3E7B621E495F000BF6328 /* BoardCell.swift in Sources */,
 				54C3E7B221E32E5700BF6328 /* FMDatabaseAdditions.m in Sources */,
+				5460273021E834D4001935F2 /* AddEventVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

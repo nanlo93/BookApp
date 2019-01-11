@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //게시판 글 목록을 저장
     var boardList = [BoardData]()
     
+    var id : String!            // ! 혹은 ? 는 나중에 값을 저장하고자 할 때 선언
+    var phone : String!
+    var memberLevel : String!   //'operator' or 'member'
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
