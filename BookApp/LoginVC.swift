@@ -26,10 +26,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             alert.addAction(ok)
             self.present(alert, animated: true)
         }else{
-            //let param : Parameters = ["id" : tfId.text, "pw" : tfPw.text]
-            //서버로 회원 정보 전송
-            //웹에 요청
-            //let request = Alamofire.request("cafe24.com", method: .post, parameters: param, encoding: URLEncoding.methodDependent)
+//            let param : Parameters = ["id" : tfId.text, "pw" : tfPw.text]
+//            서버로 회원 정보 전송
+//            웹에 요청
+//            let request = Alamofire.request("http://10.211.55.2:8080/server/member/login?id=\(id!)&pw=\(pw!)", method: .post, parameters: param, encoding: URLEncoding.methodDependent)
             
             //로그인 성공시
             // 화면을 전환할 뷰 컨트롤러 객체를 스토리보드에서 Storyboard ID 정보를 이용하여 읽어온다

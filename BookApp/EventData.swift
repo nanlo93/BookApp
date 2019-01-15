@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class EventData {
     var bookTitle : String?
@@ -16,4 +17,7 @@ class EventData {
     var fee : String?
     var bookImage : UIImage?
     var entry : Int?
+    
+    //MemoMO 인스턴스를 구별하기 위한 변수
+    var objectID : NSManagedObjectID?
 }

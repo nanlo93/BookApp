@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="-427.73613193403304"/>
         </scene>
-        <!--연혁-->
+        <!--역대 선정 도서-->
         <scene sceneID="MWh-uF-fFU">
             <objects>
-                <viewController storyboardIdentifier="HistoryVC" id="OYc-v2-AyU" customClass="HistoryVC" customModule="BookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryVC" id="OYc-v2-AyU" userLabel="역대 선정 도서" customClass="HistoryVC" customModule="BookApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S75-ky-ih1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

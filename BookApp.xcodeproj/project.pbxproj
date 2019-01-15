@@ -25,6 +25,7 @@
 		5463711321DF4389007B8EA7 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711021DF4389007B8EA7 /* book.png */; };
 		5463711421DF4389007B8EA7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711121DF4389007B8EA7 /* home.png */; };
 		5463711521DF4389007B8EA7 /* megaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463711221DF4389007B8EA7 /* megaphone.png */; };
+		5480E3F021EDBED000A6AA1D /* EventDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480E3EF21EDBED000A6AA1D /* EventDAO.swift */; };
 		54B97E6221E609900052044C /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B97E6121E609900052044C /* BoardData.swift */; };
 		54C3E7A021E32CE300BF6328 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */; };
 		54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E7A421E32E5600BF6328 /* FMDatabaseQueue.m */; };
@@ -59,6 +60,7 @@
 		5463711021DF4389007B8EA7 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		5463711121DF4389007B8EA7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		5463711221DF4389007B8EA7 /* megaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megaphone.png; sourceTree = "<group>"; };
+		5480E3EF21EDBED000A6AA1D /* EventDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDAO.swift; sourceTree = "<group>"; };
 		54B97E6121E609900052044C /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
 		54C3E79D21E32CD100BF6328 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		54C3E79F21E32CE300BF6328 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -133,6 +135,7 @@
 				5460272F21E834D4001935F2 /* AddEventVC.swift */,
 				5460273121E88F5C001935F2 /* EventCell.swift */,
 				5460273521E8922B001935F2 /* EventData.swift */,
+				5480E3EF21EDBED000A6AA1D /* EventDAO.swift */,
 			);
 			path = BookApp;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5480E3F021EDBED000A6AA1D /* EventDAO.swift in Sources */,
 				544D12E521DDB537008381C7 /* AppDelegate.swift in Sources */,
 				54C3E7AE21E32E5600BF6328 /* FMDatabaseQueue.m in Sources */,
 				5460273621E8922B001935F2 /* EventData.swift in Sources */,

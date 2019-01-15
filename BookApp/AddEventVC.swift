@@ -19,7 +19,7 @@ class AddEventVC: UIViewController  {
     
     @IBAction func btnAddImage(_ sender: Any) {
         //앨범 출력
-        var imagePicker = UIImagePickerController()
+        let imagePicker = UIImagePickerController()
         //편집 기능 활성화
         imagePicker.allowsEditing = true
         //앨범에 저장된 이미지 가져오기
@@ -31,6 +31,18 @@ class AddEventVC: UIViewController  {
     }
     
     @IBAction func btnSave(_ sender: Any) {
+       
+        //입력한 문자열이 있는 경우 데이터를 생성
+//        let memo = MemoVO()
+//        memo.title = self.subject
+//        memo.contents = self.contents.text
+//        memo.image = self.preview.image
+//        memo.regdate = Date()
+        let event = EventData()
+        event.bookTitle = self.tfBookTitle.text
+        event.bookAuthor = self.tfBookAuthor.text
+        event.place = self.tfPlace.text
+        event.fee = self.tfFee.text
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     

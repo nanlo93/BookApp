@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    //입벤트 목록을 저장
+    var eventList = [EventData]()
+    
     //게시판 글 목록을 저장
     var boardList = [BoardData]()
     
