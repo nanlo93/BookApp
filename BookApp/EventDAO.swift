@@ -58,6 +58,7 @@ class EventDAO{
     }
     
     //데이터를 삽입하는 메소드
+    /*
     func insert(_ data : EventDAO){
         //새로 저장할 객체를 생성
         let object = NSEntityDescription.insertNewObject(forEntityName: "Event", into: self.context) as! EventDAO
@@ -75,6 +76,7 @@ class EventDAO{
             print("\(e.localizedDescription)")
         }
     }
+    */
     func delete(_ objectID : NSManagedObjectID) -> Bool {
         let object = self.context.object(with: objectID)
         self.context.delete(object)
