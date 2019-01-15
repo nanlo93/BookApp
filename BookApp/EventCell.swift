@@ -10,6 +10,13 @@ import UIKit
 
 class EventCell: UITableViewCell {
 
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var lblBookTitle: UILabel!
+    @IBOutlet weak var lblBookAuthor: UILabel!
+    @IBOutlet weak var lblPlace: UILabel!
+    @IBOutlet weak var lblFee: UILabel!
+    @IBOutlet weak var lblEntry: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

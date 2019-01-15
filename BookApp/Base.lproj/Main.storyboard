@@ -417,6 +417,14 @@
                                                 <constraint firstItem="xeP-Zy-FMO" firstAttribute="top" secondItem="8wr-tl-kgu" secondAttribute="topMargin" id="z7D-20-chd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookImage" destination="b7w-FF-BSq" id="uqg-Rs-U18"/>
+                                            <outlet property="lblBookAuthor" destination="56o-CR-ZRM" id="5qe-gO-FoR"/>
+                                            <outlet property="lblBookTitle" destination="xeP-Zy-FMO" id="deQ-Tl-t7M"/>
+                                            <outlet property="lblEntry" destination="WrZ-OD-v0h" id="qZL-gV-Qrf"/>
+                                            <outlet property="lblFee" destination="Wkr-gP-V2D" id="xZ6-0p-Lzc"/>
+                                            <outlet property="lblPlace" destination="OlS-9k-uVU" id="FMP-YJ-KNz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
