@@ -56,6 +56,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         tfId.delegate = self
         tfPw.delegate = self
+        
+        print("sourceTreeTest")
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
